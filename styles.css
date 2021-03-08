@@ -1,36 +1,49 @@
-                * {
-                    box-sizing: border-box;
-                }
-                
-                body {
-                    margin: 0 auto;
-                    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-                    font-size: 25px;
-                    font-weight: 700;
-                    line-height: 23px;
-                    background-image: url("SpyPicPortfolio.jpg");
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                }
-                
-                nav {
-                    display: flex;
-                    justify-content: space-around;
-                    background-color: #464243;
-                    height: 50px;
-                }
-                
-                a {
-                    color: #10AA8A;
-                    margin: 10px;
-                }
-                
-                header {
-                    color: #464243;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-content: center;
-                    margin: 50px;
-                    width: 30%;
-                }
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #464243;
+    height: 50px;
+}
+
+a {
+    color: #10AA8A;
+    margin: 5px;
+}
+
+header {
+    color: #464243;
+    width: 100%;
+    height: 800px;
+    background-image: url("SpyPicPortfolio.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 40%;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    background-color: #E3E0B7;
+    text-align: center;
+}
