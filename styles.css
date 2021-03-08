@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    font-size: 23px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 23px;
+    background-color: ##10AA8A;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #464243;
+    height: 50px;
+}
+
+a {
+    color: #10AA8A;
+    margin: 10px;
+}
+
+header {
+    display: flex;
+    background-color: #10AA8A;
+    color: #464243;
+    height: 700px;
+}
+
+.header-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-image {
+    width: 800px;
+}
