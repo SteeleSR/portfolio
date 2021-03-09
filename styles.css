@@ -54,6 +54,12 @@ p {
     font-size: 1rem;
 }
 
+.portfolio-intro {
+    display: flex;
+    background-color: #E3E0B7;
+    padding-left: 50px;
+}
+
 .portfolio {
     display: flex;
     flex-wrap: wrap;
@@ -77,13 +83,46 @@ p {
     height: 400px;
 }
 
+.portfolio p {
+    font-size: 0.75rem;
+}
+
 .portfolio img {
     border-radius: 15px;
     height: 60%;
 }
 
-.portfolio-intro {
+.contact {
     display: flex;
-    background-color: #E3E0B7;
     padding-left: 50px;
+    background-color: #E3E0B7;
 }
+
+.contact-form {
+    width: 70%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+input {
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 686px) {
+    header {
+        background-image: url(SpyPicMediumSized.png);
+        height: 600px;
+    }
+    .header-text {
+        display: none;
+    }
+    .portfolio>article {
+        min-width: 40%;
+    }
+}
+
+@media screen and (max-width: 50px) {}
