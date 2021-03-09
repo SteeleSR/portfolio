@@ -99,7 +99,8 @@ p {
 }
 
 .contact-form {
-    width: 70%;
+    width: 100%;
+    padding: 50px;
 }
 
 form {
@@ -109,15 +110,31 @@ form {
 }
 
 input {
-    border-radius: 5px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
 }
 
-@media screen and (max-width: 686px) {
+button {
+    width: 20%;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #2E6D9F;
+    color: #fff;
+    box-shadow: none;
+}
+
+@media screen and (max-width: 750px) {
     header {
-        background-image: url(SpyPicMediumSized.png);
         height: 600px;
     }
-    .header-text {
+    nav {
+        font-size: 1.5rem;
+    }
+    h1 {
+        font-size: 4rem;
+    }
+    .header-text>h4 {
         display: none;
     }
     .portfolio>article {
@@ -125,4 +142,14 @@ input {
     }
 }
 
-@media screen and (max-width: 50px) {}
+@media screen and (max-width: 500px) {
+    .portfolio>article {
+        min-width: 90%;
+    }
+    nav {
+        display: none;
+    }
+    button {
+        width: 40%;
+    }
+}
