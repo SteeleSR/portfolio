@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    font-family: Oswald, "Trebuchet MS", Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+/* Nav Section */
+
+nav {
+    display: flex;
+    font-size: 1.7rem;
+    padding-left: 30px;
+}
+
+a {
+    color: #000;
+    margin-right: 20px;
+    padding: 20px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #000;
+    color: #4DA78B;
+    opacity: 80%;
+}
+
+
+/* header section */
+
+header {
+    height: 800px;
+    background-image: url("SpyPicPortfolio.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.header-text {
+    width: 40%;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+h1 {
+    font-size: 7rem;
+}
+
+
+/* about me section */
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    background-color: #E3E0B7;
+    padding: 20px 50px 50px 50px;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+
+/* Porfolio section */
+
+.portfolio-intro {
+    display: flex;
+    background-color: #2E6D9F;
+    color: #fff;
+    padding-left: 50px;
+    border-top: 5px solid black;
+}
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #2E6D9F;
+    padding: 50px 20px;
+    border-top: 7px solid black;
+}
+
+.portfolio>article {
+    display: flex;
+    flex-direction: column;
+    min-width: 29%;
+    max-width: 30%;
+    margin: 10px;
+    background-color: #4DA78B;
+    padding: 10px;
+    border-radius: 15px;
+    border: 5px solid black;
+    height: 400px;
+}
+
+.portfolio p {
+    font-size: 0.75rem;
+    font-weight: 300;
+}
+
+.port-img {
+    height: 60%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+
+.img1 {
+    background-image: url("https://blog.hootsuite.com/wp-content/uploads/2019/12/social-media-for-small-business.jpg");
+}
+
+.img2 {
+    background-image: url("https://thumbs.dreamstime.com/b/personal-development-growth-success-progress-potential-concepts-male-coach-human-resources-officer-supervisor-draw-46797608.jpg");
+}
+
+.img3 {
+    background-image: url("https://thumbs.dreamstime.com/b/professional-team-programmer-working-project-software-development-computer-company-office-writing-codes-data-174298302.jpg");
+}
+
+.img4 {
+    background-image: url("https://media.gettyimages.com/photos/the-savant-in-software-development-picture-id1152446913");
+}
+
+.img5 {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeImdkCszdZA-VkES2tI0wcS4X6sftLXq2gw&usqp=CAU");
+}
+
+.img6 {
+    background-image: url("https://us.123rf.com/450wm/bialasiewicz/bialasiewicz1905/bialasiewicz190500228/123114762-anonymous-women-sitting-in-circle-during-group-meeting.jpg?ver=6");
+}
+
+
+/* Contact section */
+
+.contact {
+    display: flex;
+    padding-left: 50px;
+    background-color: #4DA78B;
+    border-top: 5px solid black;
+}
+
+.contact-form {
+    width: 100%;
+    padding: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+input {
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+button {
+    width: 20%;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #2E6D9F;
+    color: #fff;
+    box-shadow: none;
+}
+
+
+/* footer section*/
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #2E6D9F;
+    border-top: 5px solid black;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    color: white;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+/* Media Queries*/
+
+@media screen and (max-width: 900px) {
+    .portfolio>article {
+        min-width: 40%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    header {
+        height: 600px;
+    }
+    nav {
+        font-size: 1.5rem;
+    }
+    h1 {
+        font-size: 4rem;
+    }
+    .header-text>h4 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    header {
+        background-image: url(SpyPicMediumSized.png);
+        border-bottom: 50px solid #4DA78B;
+    }
+    .header-text {
+        display: none;
+    }
+    .about-me {
+        border-top: 5px solid black;
+    }
+    .portfolio>article {
+        min-width: 90%;
+    }
+    button {
+        width: 40%;
+    }
+}
