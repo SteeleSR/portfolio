@@ -4,7 +4,7 @@
 
 body {
     margin: 0 auto;
-    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    font-family: Oswald, "Trebuchet MS", Arial, sans-serif;
     font-size: 20px;
     font-weight: 700;
 }
@@ -68,11 +68,13 @@ p {
     background-color: #E3E0B7;
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 50px;
 }
 
 .portfolio>article {
     display: flex;
     flex-direction: column;
+    min-width: 29%;
     max-width: 30%;
     margin: 10px;
     background-color: #2E6D9F;
@@ -95,7 +97,8 @@ p {
 .contact {
     display: flex;
     padding-left: 50px;
-    background-color: #E3E0B7;
+    background-color: #4DA78B;
+    border-top: 5px solid black;
 }
 
 .contact-form {
@@ -124,6 +127,33 @@ button {
     box-shadow: none;
 }
 
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #2E6D9F;
+    border-top: 5px solid black;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    color: white;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 900px) {
+    .portfolio>article {
+        min-width: 40%;
+    }
+}
+
 @media screen and (max-width: 750px) {
     header {
         height: 600px;
@@ -137,12 +167,9 @@ button {
     .header-text>h4 {
         display: none;
     }
-    .portfolio>article {
-        min-width: 40%;
-    }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
     .portfolio>article {
         min-width: 90%;
     }
