@@ -3,7 +3,7 @@
 }
 
 body {
-    margin: 0 auto;
+    margin: 0;
     font-family: Helvetica, "Trebuchet MS", Arial, sans-serif;
     font-size: 25px;
     font-weight: 500;
@@ -37,12 +37,8 @@ nav a:hover {
     height: 20px;
     bottom: 30px;
     right: 30px;
-    border-top: 2px solid black;
+    border-top: 2px solid #000;
     z-index: 5;
-}
-
-.nav-arrow:hover {
-    color: yellow;
 }
 
 
@@ -53,7 +49,6 @@ header {
     background-image: url("SpyPicPortfolio.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    /* If background-size set to cover it cuts off the bottom of the image*/
 }
 
 .header-text {
@@ -68,7 +63,6 @@ h1 {
 
 .header-text h3 {
     display: none;
-    overflow: auto;
 }
 
 
@@ -77,6 +71,10 @@ h1 {
 .about-me {
     background-color: #E3E0B7;
     padding: 20px 50px 50px 50px;
+}
+
+h2 {
+    font-family: Futura, sans-serif;
 }
 
 p {
@@ -107,7 +105,7 @@ aside img {
     justify-content: center;
     background-color: #2E6D9F;
     padding: 50px 20px;
-    border-top: 7px solid black;
+    border-top: 7px solid #000;
 }
 
 .portfolio>article {
@@ -116,8 +114,12 @@ aside img {
     background-color: #4DA78B;
     padding: 10px;
     border-radius: 15px;
-    border: 5px solid black;
+    border: 5px solid #000;
     height: 400px;
+}
+
+.portfolio>article:hover {
+    border: 5px #fff solid;
 }
 
 .portfolio p {
@@ -163,7 +165,7 @@ aside img {
     display: flex;
     padding-left: 50px;
     background-color: #4DA78B;
-    border-top: 7px solid black;
+    border-top: 7px solid #000;
 }
 
 .contact-form {
@@ -195,6 +197,10 @@ button {
     box-shadow: none;
 }
 
+button:hover {
+    border: 2px #fff solid;
+}
+
 
 /* footer section*/
 
@@ -202,7 +208,7 @@ footer {
     display: flex;
     justify-content: space-around;
     background-color: #2E6D9F;
-    border-top: 7px solid black;
+    border-top: 7px solid #000;
 }
 
 .fa {
@@ -212,7 +218,7 @@ footer {
     text-align: center;
     text-decoration: none;
     margin: 5px 2px;
-    color: white;
+    color: #fff;
 }
 
 .fa:hover {
@@ -261,7 +267,7 @@ footer {
         display: none;
     }
     .about-me {
-        border-top: 5px solid black;
+        border-top: 5px solid #000;
     }
     .portfolio>article {
         min-width: 90%;
@@ -275,6 +281,6 @@ footer {
     aside img {
         height: 40px;
         width: 40px;
-        display: binline-block;
+        display: inline-block;
     }
 }
