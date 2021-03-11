@@ -4,9 +4,9 @@
 
 body {
     margin: 0 auto;
-    font-family: Oswald, "Trebuchet MS", Arial, sans-serif;
-    font-size: 20px;
-    font-weight: 700;
+    font-family: Helvetica, "Trebuchet MS", Arial, sans-serif;
+    font-size: 25px;
+    font-weight: 500;
 }
 
 
@@ -25,10 +25,24 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+nav a:hover {
     background-color: #000;
     color: #4DA78B;
     opacity: 80%;
+}
+
+.nav-arrow img {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    bottom: 30px;
+    right: 30px;
+    border-top: 2px solid black;
+    z-index: 5;
+}
+
+.nav-arrow:hover {
+    color: yellow;
 }
 
 
@@ -39,44 +53,53 @@ header {
     background-image: url("SpyPicPortfolio.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    /* If background-size set to cover it cuts off the bottom of the image*/
 }
 
 .header-text {
     width: 40%;
     padding-left: 50px;
-    padding-top: 50px;
 }
 
 h1 {
     font-size: 7rem;
+    font-family: Futura, sans-serif;
+}
+
+.header-text h3 {
+    display: none;
+    overflow: auto;
 }
 
 
 /* about me section */
 
 .about-me {
-    display: flex;
-    flex-direction: column;
     background-color: #E3E0B7;
     padding: 20px 50px 50px 50px;
 }
 
 p {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 400;
-    line-height: 1.5rem;
+    line-height: 2rem;
+}
+
+aside {
+    display: flex;
+    background-color: #E3E0B7;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+
+aside img {
+    height: 80px;
+    width: 80px;
+    margin: 20px;
 }
 
 
 /* Porfolio section */
-
-.portfolio-intro {
-    display: flex;
-    background-color: #2E6D9F;
-    color: #fff;
-    padding-left: 50px;
-    border-top: 5px solid black;
-}
 
 .portfolio {
     display: flex;
@@ -88,11 +111,8 @@ p {
 }
 
 .portfolio>article {
-    display: flex;
-    flex-direction: column;
-    min-width: 29%;
-    max-width: 30%;
-    margin: 10px;
+    width: 30%;
+    margin: 5px;
     background-color: #4DA78B;
     padding: 10px;
     border-radius: 15px;
@@ -101,19 +121,19 @@ p {
 }
 
 .portfolio p {
-    font-size: 0.75rem;
+    font-size: 1rem;
     font-weight: 300;
+    line-height: 1rem;
 }
 
 .port-img {
     height: 60%;
     background-size: cover;
-    background-repeat: no-repeat;
     border-radius: 15px;
 }
 
 .img1 {
-    background-image: url("https://blog.hootsuite.com/wp-content/uploads/2019/12/social-media-for-small-business.jpg");
+    background-image: url("https://www.nerdwallet.com/assets/blog/wp-content/uploads/2020/07/GettyImages-482534949-770x462.jpg");
 }
 
 .img2 {
@@ -143,7 +163,7 @@ p {
     display: flex;
     padding-left: 50px;
     background-color: #4DA78B;
-    border-top: 5px solid black;
+    border-top: 7px solid black;
 }
 
 .contact-form {
@@ -157,14 +177,17 @@ form {
     width: 100%;
 }
 
-input {
+input,
+textarea {
     border-radius: 10px;
+    border: 2px solid #000;
     padding: 10px;
     margin: 10px;
 }
 
 button {
     width: 20%;
+    border: 2px solid #000;
     border-radius: 10px;
     padding: 10px;
     background-color: #2E6D9F;
@@ -179,7 +202,7 @@ footer {
     display: flex;
     justify-content: space-around;
     background-color: #2E6D9F;
-    border-top: 5px solid black;
+    border-top: 7px solid black;
 }
 
 .fa {
@@ -215,7 +238,15 @@ footer {
     h1 {
         font-size: 4rem;
     }
-    .header-text>h4 {
+    .header-text {
+        width: 50%;
+    }
+    .header-text h3 {
+        display: block;
+        padding-top: 10px;
+    }
+    .header-text h1,
+    .header-text h4 {
         display: none;
     }
 }
@@ -224,8 +255,9 @@ footer {
     header {
         background-image: url(SpyPicMediumSized.png);
         border-bottom: 50px solid #4DA78B;
+        padding-top: 10px;
     }
-    .header-text {
+    h1 h4 {
         display: none;
     }
     .about-me {
@@ -236,5 +268,13 @@ footer {
     }
     button {
         width: 40%;
+    }
+    nav a {
+        display: none;
+    }
+    aside img {
+        height: 40px;
+        width: 40px;
+        display: binline-block;
     }
 }
