@@ -4,9 +4,9 @@
 
 body {
     margin: 0 auto;
-    font-family: Oswald, "Trebuchet MS", Arial, sans-serif;
+    font-family: Helvetica, "Trebuchet MS", Arial, sans-serif;
     font-size: 25px;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 
@@ -53,16 +53,17 @@ header {
     background-image: url("SpyPicPortfolio.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    /* If background-size set to cover it cuts off the bottom of the image*/
 }
 
 .header-text {
     width: 40%;
     padding-left: 50px;
-    padding-top: 50px;
 }
 
 h1 {
     font-size: 7rem;
+    font-family: Futura, sans-serif;
 }
 
 .header-text h3 {
@@ -74,16 +75,14 @@ h1 {
 /* about me section */
 
 .about-me {
-    display: flex;
-    flex-direction: column;
     background-color: #E3E0B7;
     padding: 20px 50px 50px 50px;
 }
 
 p {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 400;
-    line-height: 1.5rem;
+    line-height: 2rem;
 }
 
 aside {
@@ -112,11 +111,8 @@ aside img {
 }
 
 .portfolio>article {
-    display: flex;
-    flex-direction: column;
-    min-width: 29%;
-    max-width: 30%;
-    margin: 10px;
+    width: 30%;
+    margin: 5px;
     background-color: #4DA78B;
     padding: 10px;
     border-radius: 15px;
@@ -127,17 +123,17 @@ aside img {
 .portfolio p {
     font-size: 1rem;
     font-weight: 300;
+    line-height: 1rem;
 }
 
 .port-img {
     height: 60%;
     background-size: cover;
-    background-repeat: no-repeat;
     border-radius: 15px;
 }
 
 .img1 {
-    background-image: url("https://blog.hootsuite.com/wp-content/uploads/2019/12/social-media-for-small-business.jpg");
+    background-image: url("https://www.nerdwallet.com/assets/blog/wp-content/uploads/2020/07/GettyImages-482534949-770x462.jpg");
 }
 
 .img2 {
@@ -191,6 +187,7 @@ textarea {
 
 button {
     width: 20%;
+    border: 2px solid #000;
     border-radius: 10px;
     padding: 10px;
     background-color: #2E6D9F;
@@ -241,8 +238,12 @@ footer {
     h1 {
         font-size: 4rem;
     }
+    .header-text {
+        width: 50%;
+    }
     .header-text h3 {
         display: block;
+        padding-top: 10px;
     }
     .header-text h1,
     .header-text h4 {
@@ -254,6 +255,7 @@ footer {
     header {
         background-image: url(SpyPicMediumSized.png);
         border-bottom: 50px solid #4DA78B;
+        padding-top: 10px;
     }
     h1 h4 {
         display: none;
@@ -267,11 +269,12 @@ footer {
     button {
         width: 40%;
     }
-    nav {
+    nav a {
         display: none;
     }
     aside img {
-        height: 50px;
-        width: 50px;
+        height: 40px;
+        width: 40px;
+        display: binline-block;
     }
 }
