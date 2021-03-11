@@ -1,0 +1,281 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    margin: 0;
+    font-family: Helvetica, "Trebuchet MS", Arial, sans-serif;
+    font-weight: 500;
+}
+
+
+/* Nav Section */
+
+nav {
+    display: flex;
+    font-size: 1rem;
+    padding-left: 30px;
+}
+
+a {
+    color: #000;
+    margin-right: 20px;
+    padding: 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #000;
+    color: #4DA78B;
+    opacity: 80%;
+}
+
+.nav-arrow img {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    bottom: 30px;
+    right: 30px;
+    border-top: 2px solid #000;
+    z-index: 5;
+}
+
+
+/* header section */
+
+header {
+    height: 800px;
+    background-image: url("SpyPicPortfolio.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.header-text {
+    width: 40%;
+    padding-left: 50px;
+}
+
+h1 {
+    font-size: 5rem;
+    font-family: Futura, sans-serif;
+}
+
+.header-text h3 {
+    display: none;
+}
+
+
+/* about me section */
+
+.about-me {
+    background-color: #E3E0B7;
+    padding: 20px 50px 50px 50px;
+}
+
+h2 {
+    font-family: Futura, sans-serif;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+aside {
+    display: flex;
+    background-color: #E3E0B7;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+
+aside img {
+    width: 80px;
+    margin: 20px;
+}
+
+
+/* Porfolio section */
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #2E6D9F;
+    padding: 50px 20px;
+    border-top: 7px solid #000;
+}
+
+.portfolio>article {
+    width: 30%;
+    margin: 5px;
+    background-color: #4DA78B;
+    padding: 10px;
+    border-radius: 15px;
+    border: 5px solid #000;
+    height: 400px;
+}
+
+.portfolio>article:hover {
+    border: 5px #fff solid;
+}
+
+.portfolio p {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1rem;
+}
+
+.port-img {
+    height: 60%;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.img1 {
+    background-image: url("https://www.nerdwallet.com/assets/blog/wp-content/uploads/2020/07/GettyImages-482534949-770x462.jpg");
+}
+
+.img2 {
+    background-image: url("https://thumbs.dreamstime.com/b/personal-development-growth-success-progress-potential-concepts-male-coach-human-resources-officer-supervisor-draw-46797608.jpg");
+}
+
+.img3 {
+    background-image: url("https://thumbs.dreamstime.com/b/professional-team-programmer-working-project-software-development-computer-company-office-writing-codes-data-174298302.jpg");
+}
+
+.img4 {
+    background-image: url("https://media.gettyimages.com/photos/the-savant-in-software-development-picture-id1152446913");
+}
+
+.img5 {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeImdkCszdZA-VkES2tI0wcS4X6sftLXq2gw&usqp=CAU");
+}
+
+.img6 {
+    background-image: url("https://us.123rf.com/450wm/bialasiewicz/bialasiewicz1905/bialasiewicz190500228/123114762-anonymous-women-sitting-in-circle-during-group-meeting.jpg?ver=6");
+}
+
+
+/* Contact section */
+
+.contact {
+    padding-left: 50px;
+    background-color: #4DA78B;
+    border-top: 7px solid #000;
+}
+
+.contact-form {
+    padding: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+textarea {
+    border-radius: 10px;
+    border: 2px solid #000;
+    padding: 10px;
+    margin: 10px;
+}
+
+button {
+    width: 20%;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #2E6D9F;
+    color: #fff;
+}
+
+button:hover {
+    border: 2px #fff solid;
+}
+
+
+/* footer section*/
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #2E6D9F;
+    border-top: 7px solid #000;
+}
+
+.fa {
+    font-size: 30px;
+    width: 50px;
+    margin: 5px 2px;
+    color: #fff;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+/* Media Queries*/
+
+@media screen and (max-width: 900px) {
+    .portfolio>article {
+        min-width: 40%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    header {
+        height: 600px;
+    }
+    nav {
+        font-size: 1.5rem;
+    }
+    h1 {
+        font-size: 4rem;
+    }
+    .header-text {
+        width: 50%;
+    }
+    .header-text h3 {
+        display: block;
+        padding-top: 10px;
+    }
+    .header-text h1,
+    .header-text h4 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    header {
+        background-image: url("SpyPicMediumSized.png");
+        border-bottom: 50px solid #4DA78B;
+        padding-top: 10px;
+    }
+    h1 h4 {
+        display: none;
+    }
+    .about-me {
+        border-top: 5px solid #000;
+    }
+    .portfolio>article {
+        min-width: 90%;
+    }
+    button {
+        width: 40%;
+    }
+    nav a {
+        display: none;
+    }
+    aside img {
+        height: 40px;
+        width: 40px;
+        display: inline-block;
+    }
+}
