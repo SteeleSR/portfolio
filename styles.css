@@ -2,10 +2,13 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 20px;
+}
+
 body {
     margin: 0;
     font-family: Helvetica, "Trebuchet MS", Arial, sans-serif;
-    font-size: 25px;
     font-weight: 500;
 }
 
@@ -14,7 +17,7 @@ body {
 
 nav {
     display: flex;
-    font-size: 1.7rem;
+    font-size: 1rem;
     padding-left: 30px;
 }
 
@@ -57,7 +60,7 @@ header {
 }
 
 h1 {
-    font-size: 7rem;
+    font-size: 5rem;
     font-family: Futura, sans-serif;
 }
 
@@ -78,9 +81,9 @@ h2 {
 }
 
 p {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 400;
-    line-height: 2rem;
+    line-height: 1.5rem;
 }
 
 aside {
@@ -91,7 +94,6 @@ aside {
 }
 
 aside img {
-    height: 80px;
     width: 80px;
     margin: 20px;
 }
@@ -162,21 +164,18 @@ aside img {
 /* Contact section */
 
 .contact {
-    display: flex;
     padding-left: 50px;
     background-color: #4DA78B;
     border-top: 7px solid #000;
 }
 
 .contact-form {
-    width: 100%;
     padding: 50px;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    width: 100%;
 }
 
 input,
@@ -194,7 +193,6 @@ button {
     padding: 10px;
     background-color: #2E6D9F;
     color: #fff;
-    box-shadow: none;
 }
 
 button:hover {
@@ -212,11 +210,8 @@ footer {
 }
 
 .fa {
-    padding: 20px;
     font-size: 30px;
     width: 50px;
-    text-align: center;
-    text-decoration: none;
     margin: 5px 2px;
     color: #fff;
 }
@@ -259,7 +254,7 @@ footer {
 
 @media screen and (max-width: 590px) {
     header {
-        background-image: url(SpyPicMediumSized.png);
+        background-image: url("SpyPicMediumSized.png");
         border-bottom: 50px solid #4DA78B;
         padding-top: 10px;
     }
